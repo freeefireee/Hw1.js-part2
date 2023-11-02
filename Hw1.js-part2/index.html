@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M1steR.X</title>
+</head>
+<style>
+    .valid {
+        background-color: lightgreen;
+    }
+    .invalid {
+        background-color: salmon;
+    }
+</style>
+<body>
+
+    <label for="text">Введите текст:</label>
+    <input type="text" id="text" oninput="checkInput(this)">
+    <p id="textResult"></p>
+
+    <label for="email">Проверьте e-mail:</label>
+    <input type="text" id="email" oninput="checkEmail(this)">
+    <p id="emailResult"></p>
+
+    <script src="./script.js"></script>
+</body>
+</html>
